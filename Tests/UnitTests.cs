@@ -27,7 +27,6 @@ public class Addition
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Add(null, null));
 	}
 }
-namespace GithubActionsLab;
 
 [TestClass]
 public class Subtraction
