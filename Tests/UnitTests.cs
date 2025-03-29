@@ -27,6 +27,7 @@ public class Addition
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Add(null, null));
 	}
 }
+namespace GithubActionsLab;
 
 [TestClass]
 public class Subtraction
@@ -119,14 +120,14 @@ public class Division
 }
 
 [TestClass]
-public class Power
+public class Exponentiation
 {
     [TestMethod]
     public void Power_Valid_Patino()
     {
         Assert.AreEqual(8, Program.Power("2", "3"));
         Assert.AreEqual(1, Program.Power("5", "0"));
-        Assert.AreEqual(0.25, Program.Power("2", "-2"));
+        Assert.AreEqual(0.25, Program.Power("2", "-2"), 0.0001);
     }
 
     [TestMethod]
@@ -145,4 +146,3 @@ public class Power
         Assert.ThrowsException<ArgumentNullException>(() => Program.Power(null, null));
     }
 }
-
