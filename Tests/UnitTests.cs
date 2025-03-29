@@ -1,6 +1,6 @@
 namespace GithubActionsLab
 {
-    [TestClass]
+    [TestClass] 
     public class Addition
     {
         [TestMethod]
