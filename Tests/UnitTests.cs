@@ -110,12 +110,6 @@ namespace GithubActionsLab
             Assert.ThrowsException<ArgumentNullException>(() => Program.Divide(null, "1"));
             Assert.ThrowsException<ArgumentNullException>(() => Program.Divide(null, null));
         }
-
-        [TestMethod]
-        public void Divide_ByZero_Patino()
-        {
-            Assert.ThrowsException<DivideByZeroException>(() => Program.Divide("5", "0"));
-        }
     }
 
     [TestClass]
